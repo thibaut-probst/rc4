@@ -11,13 +11,10 @@ class RC4:
 
     
     def ksa(self):
-        """
-
-        """
-        '''
-        Key Scheduling Algorithm function that generates a permutation array from the key
+        """Key Scheduling Algorithm function that generates a permutation array from the key
+        
         :return: a permutation array
-        '''
+        """
         key_b = [ord(c) for c in self.key] # convert string to byte
         key_length = len(key_b)
         S = list(range(256)) # initialize S
