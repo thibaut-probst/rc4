@@ -116,8 +116,7 @@ class RC4:
             case 'bin':
                 return self.xor_bytes(plaintext_b, keystream) # perform bytewise XOR and return in bytes format
             case 'unicode':
-                # perform bytewise XOR
-                cipertext_b = self.xor_bytes(plaintext_b, keystream)
+                cipertext_b = self.xor_bytes(plaintext_b, keystream) # perform bytewise XOR
                 cipertext_unicode = ''
                 for b in cipertext_b:
                     cipertext_unicode += chr(b)
